@@ -4,9 +4,15 @@ import App from './App';
 import Stateless from './Stateless';
 import './index.css';
 
+const user = {
+  name: 'Dave',
+  interests: ['Family', 'Code', 'Guitar','Doña Sauce'],
+  greeted: false,
+}
+
 ReactDOM.render(
   <App>
-    <Stateless user={'Dave'}/>
+    <Stateless user={user}/>
   </App>,
   document.getElementById('root')
 );

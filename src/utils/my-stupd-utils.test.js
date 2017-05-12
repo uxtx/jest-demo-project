@@ -2,9 +2,11 @@ import { reverseString, isPalindrome, addTwo } from './my-stupid-utils';
 
 describe('addTwo', () => {
   it('can add 2 to a number', () => {
+    // you can use matchers to assert values
     expect(addTwo(4)).toBe(6);
   });
   it('throws an error if you try to add to anything but a number', () => {
+    // you can use matchers to assert something throws an error
     expect(() => { addTwo('cheese'); }).toThrow('must be a number');
   });
 });
@@ -12,7 +14,9 @@ describe('addTwo', () => {
 describe('reverseString', () => {
   it('can add reverse a string', () => {
     expect(reverseString('hello')).toBe('olleh');
-    expect(reverseString('foo bar')).toBe('rab oof');
+    expect(reverseString(8)).toBeUndefined();
+    // you can use matchers to assert truthiness or falsiness
+    expect(reverseString('hello')).toBeTruthy();
     expect(reverseString(2)).toBeFalsy();
   });
 });

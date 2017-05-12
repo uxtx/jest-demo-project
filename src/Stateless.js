@@ -11,13 +11,24 @@ const styles= {
 const Stateless = ({ user }) => {
   return (
     <div style={ styles.text } >
-      <h2>Welcome to Jest Testing, {user}</h2>
+      <h2>Welcome to Jest Testing, {user.name}</h2>
+        { user.interests && user.interests.length &&
+          <div>
+            <p>I see your interests are
+            </p>
+            <ul>
+            { user.interests.map((interest, i) => (
+              <li key={`interest-${i}`}>{interest}</li>
+            )) }
+            </ul>
+          </div>
+        }
     </div>
   );
 }
 
 Stateless.proptypes = {
-  user: PropTypes.string,
+  user: PropTypes.object.isRequired,
 };
 
 export default Stateless;
