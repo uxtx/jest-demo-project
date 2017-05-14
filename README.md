@@ -1,3 +1,5 @@
+This repo is to demonstrate general functionality of the Jest test framework and was used  for Austin ReactJS 5.15.2017.
+
 ## Available Scripts
 
 In the project directory, you can run:
