@@ -27,4 +27,7 @@ describe('isPalindrome', () => {
     expect(isPalindrome('hello')).toBe(false);
     expect(isPalindrome(3)).toBeFalsy();
   });
+  it('doesnt worry about case or spaces', () => {
+    expect(isPalindrome('Taco cat')).toBe(true);
+  });
 });

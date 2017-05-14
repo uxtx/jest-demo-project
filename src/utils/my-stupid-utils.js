@@ -15,5 +15,6 @@ export const isPalindrome = (str) => {
   if (typeof str !== 'string') {
     return;
   }
-  return reverseString(str) === str
+  const normalizedStr = str.toLowerCase().replace(/ /g, '');
+  return reverseString(normalizedStr) === normalizedStr
 };
