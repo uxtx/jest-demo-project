@@ -11,6 +11,7 @@ export const reverseString = (str) => {
   }
   return str.split("").reverse().join("");
 }
+
 export const isPalindrome = (str) => {
   if (typeof str !== 'string') {
     return;

@@ -7,6 +7,10 @@ class InterestBox extends React.Component {
     interest: ''
   }
 
+  _onInputChange = ({ target: { value } }) => {
+    this.setState({ interest: value })
+  }
+
   _addOnEnter = ({ keyCode }) => {
     if (keyCode === 13) {
       this._addInterest()
@@ -20,10 +24,6 @@ class InterestBox extends React.Component {
     this.setState({ interest: '' })
   }
 
-  _onInputChange = ({ target: { value } }) => {
-    this.setState({ interest: value })
-  }
-
   render() {
     const { interest } = this.state;
     return (
@@ -31,8 +31,8 @@ class InterestBox extends React.Component {
         <p>Add an Interest</p>
         <input
           value={interest}
-          onKeyDown={ this._addOnEnter }
           onChange={this._onInputChange}
+          onKeyDown={ this._addOnEnter }
         />
         <input
           onClick={this._addInterest}

@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import UserInfo from './user-info';
 import './index.css';
 
@@ -10,8 +9,6 @@ const user = {
 };
 
 ReactDOM.render(
-  <App>
-    <UserInfo user={user}/>
-  </App>,
-  document.getElementById('root')
+  <UserInfo user={user}/>
+  , document.getElementById('root')
 );

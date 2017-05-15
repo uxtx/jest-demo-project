@@ -1,9 +1,14 @@
 import React from 'react';
 import InterestBox from './interest-box';
+import s from 'object-search';
 import { isPalindrome } from './utils/my-stupid-utils';
 import PropTypes from 'prop-types';
 
 const styles= {
+  container: {
+    maxWidth: 960,
+    margin: 'auto',
+  },
   text: {
     fontSize: 'large',
   },
@@ -20,7 +25,7 @@ class UserInfo extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      interests: props.user.interests,
+      interests: s.get(props, 'user.interests') || [],
     }
   }
   _removeInterest = (i) => {
@@ -48,10 +53,10 @@ class UserInfo extends React.Component {
   }
 
   render () {
-    const { user } = this.props;
+    const { user={} } = this.props;
     const { interests } = this.state;
     return (
-      <div style={ styles.text } >
+      <div style={{ ...styles.text, ...styles.container }} >
         <h2>All about {user.name}</h2>
           <InterestBox onInputSave={this._updateInterest} />
           { interests && !!interests.length &&

@@ -1,6 +1,8 @@
 import React from 'react';
-import { mount } from 'enzyme'
+import { shallow } from 'enzyme';
 import UserInfo from './user-info';
+import toJson from 'enzyme-to-json';
+
 
 const testUser = {
   name: 'Joe Test',
@@ -8,15 +10,23 @@ const testUser = {
 };
 
 describe('UserInfo component', () => {
-  it('throws if missing required props', () => {
-    expect(() => { node = mount(<UserInfo/>);}).toThrow();
-  });
   it('passes props and renders as expected', () => {
-    const node = mount(<UserInfo user={testUser}/>);
-    expect (node).toBeTruthy();
-    // ZOMG you guys, enzyme natchers are super nifty.
-    expect(node.find('h2').html()).toContain('Joe Test');
-    // ZOMG you guys, enzyme natchers are super nifty.
-    expect(node.find('ul').first().html()).toContain('Being a guinea pig');
+    const node = shallow(<UserInfo user={testUser}/>);
+    expect(node).toBeTruthy();
+    expect(node).toMatchSnapshot();
   });
-})
+  it('renders name and interests', () => {
+    const node = shallow(<UserInfo user={testUser}/>);
+    // ZOMG you guys, enzyme matchers are super nifty.
+    expect(node.find('h2').html()).toContain('Joe Test');
+    expect(node.find('li').at(0).html()).toContain('Being a guinea pig');
+    expect(node.find('li').at(1).html()).toContain('testing stuff');
+  });
+  it('throws if missing required props', () => {
+    expect(() => { node = shallow(<UserInfo/>);}).toThrow();
+  });
+  it('renders correctly', () => {
+    const node = shallow(<UserInfo user={testUser}/>);
+    expect(toJson(node)).toMatchSnapshot();
+  });
+});

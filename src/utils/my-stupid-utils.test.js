@@ -4,6 +4,8 @@ describe('addTwo', () => {
   it('can add 2 to a number', () => {
     // you can use matchers to assert values
     expect(addTwo(4)).toBe(6);
+    expect(addTwo(57)).toBe(59);
+    expect(addTwo(8)).toBe(10);
   });
   it('throws an error if you try to add to anything but a number', () => {
     // you can use matchers to assert something throws an error

@@ -1,0 +1,371 @@
+exports[`UserInfo component passes props and renders as expected 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    style={
+        Object {
+            "fontSize": "large",
+            "margin": "auto",
+            "maxWidth": 960,
+          }
+    }>
+    <h2>
+        All about 
+        Joe Test
+    </h2>
+    <InterestBox
+        onInputSave={[Function]} />
+    <div>
+        <p>
+            I like to...
+        </p>
+        <ul>
+            <li>
+                Being a guinea pig
+                <a
+                    onClick={[Function]}
+                    style={
+                        Object {
+                            "color": "#cc0000",
+                            "cursor": "pointer",
+                            "marginLeft": "1em",
+                          }
+                    }>
+                    ×
+                </a>
+            </li>
+            <li>
+                testing stuff
+                <a
+                    onClick={[Function]}
+                    style={
+                        Object {
+                            "color": "#cc0000",
+                            "cursor": "pointer",
+                            "marginLeft": "1em",
+                          }
+                    }>
+                    ×
+                </a>
+            </li>
+        </ul>
+        <div>
+            Interestingly,
+                      none
+                      of my interests are palindromes
+        </div>
+    </div>
+</div>,
+  "nodes": Array [
+    <div
+      style={
+            Object {
+                  "fontSize": "large",
+                  "margin": "auto",
+                  "maxWidth": 960,
+                }
+      }>
+      <h2>
+            All about 
+            Joe Test
+      </h2>
+      <InterestBox
+            onInputSave={[Function]} />
+      <div>
+            <p>
+                  I like to...
+            </p>
+            <ul>
+                  <li>
+                        Being a guinea pig
+                        <a
+                              onClick={[Function]}
+                              style={
+                                    Object {
+                                          "color": "#cc0000",
+                                          "cursor": "pointer",
+                                          "marginLeft": "1em",
+                                        }
+                              }>
+                              ×
+                        </a>
+                  </li>
+                  <li>
+                        testing stuff
+                        <a
+                              onClick={[Function]}
+                              style={
+                                    Object {
+                                          "color": "#cc0000",
+                                          "cursor": "pointer",
+                                          "marginLeft": "1em",
+                                        }
+                              }>
+                              ×
+                        </a>
+                  </li>
+            </ul>
+            <div>
+                  Interestingly,
+                            none
+                            of my interests are palindromes
+            </div>
+      </div>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance":  {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <UserInfo
+        user={
+                Object {
+                        "interests": Array [
+                          "Being a guinea pig",
+                          "testing stuff",
+                        ],
+                        "name": "Joe Test",
+                      }
+        } />,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": UserInfo {
+        "_reactInternalInstance": [Circular],
+        "_removeInterest": [Function],
+        "_updateInterest": [Function],
+        "checkForPalindromes": [Function],
+        "context": Object {},
+        "props": Object {
+          "user": Object {
+            "interests": Array [
+              "Being a guinea pig",
+              "testing stuff",
+            ],
+            "name": "Joe Test",
+          },
+        },
+        "refs": Object {},
+        "state": Object {
+          "interests": Array [
+            "Being a guinea pig",
+            "testing stuff",
+          ],
+        },
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          style={
+                    Object {
+                              "fontSize": "large",
+                              "margin": "auto",
+                              "maxWidth": 960,
+                            }
+          }>
+          <h2>
+                    All about 
+                    Joe Test
+          </h2>
+          <InterestBox
+                    onInputSave={[Function]} />
+          <div>
+                    <p>
+                              I like to...
+                    </p>
+                    <ul>
+                              <li>
+                                        Being a guinea pig
+                                        <a
+                                                  onClick={[Function]}
+                                                  style={
+                                                            Object {
+                                                                      "color": "#cc0000",
+                                                                      "cursor": "pointer",
+                                                                      "marginLeft": "1em",
+                                                                    }
+                                                  }>
+                                                  ×
+                                        </a>
+                              </li>
+                              <li>
+                                        testing stuff
+                                        <a
+                                                  onClick={[Function]}
+                                                  style={
+                                                            Object {
+                                                                      "color": "#cc0000",
+                                                                      "cursor": "pointer",
+                                                                      "marginLeft": "1em",
+                                                                    }
+                                                  }>
+                                                  ×
+                                        </a>
+                              </li>
+                    </ul>
+                    <div>
+                              Interestingly,
+                                        none
+                                        of my interests are palindromes
+                    </div>
+          </div>
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div
+          style={
+                    Object {
+                              "fontSize": "large",
+                              "margin": "auto",
+                              "maxWidth": 960,
+                            }
+          }>
+          <h2>
+                    All about 
+                    Joe Test
+          </h2>
+          <InterestBox
+                    onInputSave={[Function]} />
+          <div>
+                    <p>
+                              I like to...
+                    </p>
+                    <ul>
+                              <li>
+                                        Being a guinea pig
+                                        <a
+                                                  onClick={[Function]}
+                                                  style={
+                                                            Object {
+                                                                      "color": "#cc0000",
+                                                                      "cursor": "pointer",
+                                                                      "marginLeft": "1em",
+                                                                    }
+                                                  }>
+                                                  ×
+                                        </a>
+                              </li>
+                              <li>
+                                        testing stuff
+                                        <a
+                                                  onClick={[Function]}
+                                                  style={
+                                                            Object {
+                                                                      "color": "#cc0000",
+                                                                      "cursor": "pointer",
+                                                                      "marginLeft": "1em",
+                                                                    }
+                                                  }>
+                                                  ×
+                                        </a>
+                              </li>
+                    </ul>
+                    <div>
+                              Interestingly,
+                                        none
+                                        of my interests are palindromes
+                    </div>
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <UserInfo
+    user={
+        Object {
+            "interests": Array [
+              "Being a guinea pig",
+              "testing stuff",
+            ],
+            "name": "Joe Test",
+          }
+    } />,
+}
+`;
+
+exports[`UserInfo component renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "fontSize": "large",
+      "margin": "auto",
+      "maxWidth": 960,
+    }
+  }>
+  <h2>
+    All about 
+    Joe Test
+  </h2>
+  <InterestBox
+    onInputSave={[Function]} />
+  <div>
+    <p>
+      I like to...
+    </p>
+    <ul>
+      <li>
+        Being a guinea pig
+        <a
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "#cc0000",
+              "cursor": "pointer",
+              "marginLeft": "1em",
+            }
+          }>
+          ×
+        </a>
+      </li>
+      <li>
+        testing stuff
+        <a
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "#cc0000",
+              "cursor": "pointer",
+              "marginLeft": "1em",
+            }
+          }>
+          ×
+        </a>
+      </li>
+    </ul>
+    <div>
+      Interestingly,
+                none
+                of my interests are palindromes
+    </div>
+  </div>
+</div>
+`;
